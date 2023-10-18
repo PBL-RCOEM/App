@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Smart_Appointment</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="loginPassword">Password</string>
+    <string name="address">Address</string>
+    <string name="medical_history">Previous Disease</string>
+    <string name="weight">Weight</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="signUp">Sign Up</string>
+    <string name="mandatory_fields">* Mandatory Fields</string>
+    <string name="dr_stone_string">Dr Stone</string>
+    <string name="already_have_an_account">Already Have an Account</string>
+    <string name="login">Login</string>
+</resources>
