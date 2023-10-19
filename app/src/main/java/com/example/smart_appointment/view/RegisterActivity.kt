@@ -1,5 +1,6 @@
 package com.example.smart_appointment
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.smart_appointment.databinding.ActivityRegistrationBinding
+import com.example.smart_appointment.view.MainActivity
 import com.google.android.material.datepicker.MaterialDatePicker
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener {
@@ -20,10 +22,11 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(mBinding.root)
 
         //Binding
-
-
-
-
+        mBinding.btnLogin.setOnClickListener {
+            // Perform the navigation to the next activity here
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
         //Date Picker
         val builder: MaterialDatePicker.Builder<*> = MaterialDatePicker.Builder.datePicker()
         builder.setTitleText("Select Your DOB")
